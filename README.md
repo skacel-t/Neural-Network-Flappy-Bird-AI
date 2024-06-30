@@ -1,6 +1,6 @@
 # Neural-Network-Flappy-Bird-AI
 
-In this project we train a flappy bird AI using a basic neural network evolutionary algorithm. We do not use any libraries in our code. 
+In this project we train a flappy bird AI using a basic neural network evolutionary algorithm. We do not use any libraries in our code. In this scenario, the simplest neural network will suffice (3 input nodes, 1 output node). In each generation, we have 50 AI controlled players play the game, where fitness is determined by distance traveled and how close the player was to the gap between pipes upon death (this is used as a tie-breaker, and is quite important in the evolutionary success). Once all AI players perish, the best 5 are chosen, and the next generation is filled with them and slightly mutated versions of themselves. In a future version a large mutation to the brain of a child will be added, with low probability of occuring. We do not utilize speciation in our evolutionary alogirithm, as the previously described approach works reasonably quickly. 
 
-The result is an AI that can play the game indefinitely. If the AI does make it 18000 frames into the game, we end the current generation and start the next one, as this is an adequate level of success. 
+The result is an AI that can play the game indefinitely. If the AI does make it 18000 frames into the game, we end the current generation and start the next one, as this is an adequate level of success. The code will also print the neural networks (the three weights and the bias) of the five champions in each generation. One can use this to save a player that will always win at the game. 
  
